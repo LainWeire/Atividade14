@@ -2,14 +2,18 @@
 # Média ≥ 7: Aprovado
 # 5 ≤ Média < 7: Recuperação
 # Média < 5: Reprovado
+
 n1 = float(input("Digite a 1° nota: "))
 n2 = float(input("Digite a 2° nota: "))
 n3 = float(input("Digite a 3° nota: "))
 
-m = ((n1 + n2 + n3) / 2)
+m = ((n1 + n2 + n3) / 3)
 
 if (m >= 7):
     print ("Aprovado")
 
-else:
+elif (5 <= m) and (m < 7):
+    print ("Recuperação")
+
+elif (m < 5):
     print ("Reprovado")
